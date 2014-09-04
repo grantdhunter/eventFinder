@@ -1,7 +1,7 @@
 # eventFinder
 
 
-This is the technical test for SpotOn.it. It crawls a given webpage and returns 10 URLs of events on that domain.
+This is the technical test for SpotOn.it. It crawls a given web page and returns 10 URLs of events on that domain.
 
 eventFinder utilize request.js, cheerio.js and compares urls using Levenshtein Distances.
 
@@ -27,7 +27,7 @@ eventFinder.getEvents(<<link to search>>, function(links) {
 - http://www.eventbrite.com/e/sausalito-art-festival-2014-tickets-11831764125?aff=ehometext&rank=0 
 
 ## Notes: 
-From these tests most links were crawled succesfully and returned proper event link. Due to the fact that this solution uses the higher levels of the URL to find the event listing page, it does not preform as well on www.workshopsf.org.  This is due to the fact that this page uses a page_id for navigation (wordpress) and it is not easy to find the event list page programatically. For www.workshopsf.org they do have events on the main page, and this solution returns them but it also returns other links because the small number of events (less than ten events).
+From these tests most links were crawled successfully and returned proper event link. Due to the fact that this solution uses the higher levels of the URL to find the event listing page, it does not perform as well on www.workshopsf.org.  This is due to the fact that this page uses a page_id for navigation (wordpress) and it is not easy to find the event list page programmatically. For www.workshopsf.org they do have events on the main page, and this solution returns them but it also returns other links because the small number of events (less than ten events).
 
 
 ## TODO: 
@@ -35,4 +35,5 @@ From these tests most links were crawled succesfully and returned proper event l
 
 - look for links that are not in <a></a> tags or links that could be generated using javascript.
 
-- More robust URL comparison, other string metric algorythim or even regular expression. Better filtering of the URLs.
+- More robust URL comparison, other string metric algorithm or even regular expression. Better filtering of the URLs.
+

@@ -19,7 +19,8 @@ http://calendar.boston.com/lowell_ma/events/show/274127485-mrt-presents-shakespe
 http://www.sfmoma.org/exhib_events/exhibitions/513
 http://www.workshopsf.org/?page_id=140&id=1328
 http://events.stanford.edu/events/353/35309/
-
+http://www.meetup.com/startupedmonton/events/200764552/
+http://www.eventbrite.com/e/sausalito-art-festival-2014-tickets-11831764125?aff=ehometext&rank=0 
 
 Notes: 
 Other than www.workshopsf.org this works pretty good. Workshopsf looks like it is built on wordpress and there is no easy way of finding the events page. 
@@ -28,6 +29,6 @@ Other than www.workshopsf.org this works pretty good. Workshopsf looks like it i
 TODO: 
 -Find a better way to handle site like www.workshopsf.org, maybe look at the navigation bar for words such as 'Event', 'Events', 'Exhibition', 'calendar'.
 
--look for links that are not in <a></a> tags, Links could be generated using javascript.
+-look for links that are not in <a></a> tags or links that could be generated using javascript.
 
 -More robust URL comparison, Other string metric algorythim or even regular expression.

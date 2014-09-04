@@ -42,10 +42,13 @@ exports.getEvents = function (givenLink, callback) {
                 var $ = cheerio.load(body)
 
                 $('a').each(function (i, elem) {
-                    var link = normalizeUrl($(elem).attr('href'));
 
-                    if (!links.contains(link) && link.indexOf('#') < 0) {
-                        links.push(getDistance(link));
+                    if ($(elem).attr('href') && $(elem).attr('href') !== givenLink) {
+                        var link = normalizeUrl($(elem).attr('href'));
+
+                        if (!links.contains(link) && link.indexOf('#') < 0) {
+                            links.push(getDistance(link));
+                        }
                     }
                 });
 

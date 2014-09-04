@@ -1,3 +1,9 @@
+/**
+ * Demo script to show how to implement the eventFinder.
+ * How to run - In the terminal type:
+ *      node .\app.js '<<event URL>>'
+ * This will print out 10 new event links to the terminal
+ */
 
 var eventFinder = require('./eventFinder.js');
 //index 0: node

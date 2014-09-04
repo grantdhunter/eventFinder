@@ -121,17 +121,7 @@ exports.getEvents = function (givenLink, callback) {
         return links.slice(0, maxResults);
     }
 
-    /**
-     * Prints results to console.
-     * @param {array} links Array of objects with with the attributes link & distance
-     */
-    function displayResults(links) {
-        console.log('/************Results***********/');
-        for (var i = 0; i < links.length; i++) {
-            console.log(links[i].link);
-        }
-    }
-    /**
+   /**
      * This normalizes all links relative or absolute to a standard URL format.
      * @param {string} aLink This is the link you want normalized.
      * @return {string} A normalized URL.

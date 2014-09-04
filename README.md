@@ -9,14 +9,14 @@ eventFinder utilize request.js, cheerio.js and compares urls using Levenshtein D
 1. clone from github https://github.com/grantdhunter/eventFinder
 2. run npm install to get required libraries
 3. include it in your project and implement.
-'''javascript
+```javascript
 //use path to the eventFinder.js file
 var eventFinder = require('./eventFinder.js');
 
 eventFinder.getEvents(<<link to search>>, function(links) {
   //use the returned links
 });
-'''
+```
 
 ## Test Links:
 - http://calendar.boston.com/lowell_ma/events/show/274127485-mrt-presents-shakespeares-will

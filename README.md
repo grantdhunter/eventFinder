@@ -1,7 +1,7 @@
 # eventFinder
 
 
-This is the technical test for SpotOn.it. It crawls a given web page and returns 10 URLs of events on that domain.
+This script crawls a given web page and returns 10 URLs of events on that domain.
 
 eventFinder utilize request.js, cheerio.js and compares urls using Levenshtein Distances.
 
